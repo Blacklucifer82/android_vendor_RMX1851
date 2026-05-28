@@ -506,7 +506,6 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libpvr \
     libqcci_legacy \
     libqcmaputils \
     libqcrilFramework \
@@ -762,6 +761,7 @@ PRODUCT_PACKAGES += \
     libml_util \
     libnativehelpers \
     libnlnetmgr \
+    libpvr \
     libqcbor \
     libqcc_file_agent \
     libqdma_file_agent \
@@ -922,18 +922,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.qti.latency@2.0 \
-    anc.hal \
-    fingerprint.goodix_G2.default \
-    fingerprint.goodix_G3.default \
     libbsproxy \
-    libgf_hal_G2 \
-    libgf_hal_G3 \
     oplus.sensors.ssc \
-    vendor.oplus.hardware.biometrics.fingerprint@2.1 \
+    vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
     vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
     libSNPE_G \
     libaudioEngineerTest \
+    anc.hal \
+    fingerprint.goodix_G2.default \
+    fingerprint.goodix_G3.default \
     libavutil \
+    libgf_hal_G2 \
+    libgf_hal_G3 \
     liboemcrypto \
     libormshalclient \
     libswresample \
