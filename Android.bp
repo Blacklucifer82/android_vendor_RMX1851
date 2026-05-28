@@ -16840,7 +16840,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmpbase",
                 "liblog",
-                "libstdc++",
+                "libstdc++_vendor",
                 "libm",
                 "libc",
                 "libdl",
@@ -21956,7 +21956,7 @@ cc_prebuilt_library_shared {
                 "libaudioclient",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V3-cpp",
+                "android.media.audio.common.types-V4-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
