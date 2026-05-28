@@ -369,6 +369,7 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.health@2.0-impl-2.1-qti \
     android.hardware.keymaster@3.0-impl-qti \
     audio.bluetooth_qti.default \
     camera.qcom \
@@ -972,6 +973,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
     vendor.qti.latency-V2.0-java \
     android.hardware.gnss@2.1-service-qti.xml \
+    android.hardware.health@2.1.xml \
     vendor.qti.gnss@4.0-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     ATFWD-daemon \
