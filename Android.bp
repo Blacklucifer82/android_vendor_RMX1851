@@ -3444,70 +3444,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.sdm710",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.sdm710.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudioroute",
-                "libaudioutils",
-                "libexpat",
-                "libhidlbase",
-                "libprocessgroup",
-                "libutils",
-                "libaudio_log_utils",
-                "libaudioEngineerTest",
-                "android.hardware.power@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.primary.sdm710.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libtinyalsa",
-                "libtinycompress",
-                "libaudioroute",
-                "libaudioutils",
-                "libexpat",
-                "libhidlbase",
-                "libprocessgroup",
-                "libutils",
-                "libaudio_log_utils",
-                "libaudioEngineerTest",
-                "android.hardware.power@1.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "camera.qcom",
     owner: "realme",
     strip: {
@@ -13650,6 +13586,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "audio.primary.qcom",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.primary.qcom.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libaudioutils",
+                "libexpat",
+                "libhidlbase",
+                "libprocessgroup",
+                "libutils",
+                "libaudio_log_utils",
+                "libaudioEngineerTest",
+                "android.hardware.power@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl",
     owner: "realme",
     strip: {
@@ -15789,6 +15764,45 @@ cc_prebuilt_library_shared {
                 "libloc_core",
                 "libgps.utils",
                 "liblocation_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "audio.primary.sdm710",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/audio.primary.sdm710.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libtinyalsa",
+                "libtinycompress",
+                "libaudioroute",
+                "libaudioutils",
+                "libexpat",
+                "libhidlbase",
+                "libprocessgroup",
+                "libutils",
+                "libaudio_log_utils",
+                "libaudioEngineerTest",
+                "android.hardware.power@1.2",
                 "libc++",
                 "libc",
                 "libm",
@@ -22831,51 +22845,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioEngineerTest",
-    owner: "realme",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libaudioEngineerTest.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libtinyalsa",
-                "libaudioroute",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libaudioEngineerTest.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libtinyalsa",
-                "libaudioroute",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbsproxy",
     owner: "realme",
     strip: {
@@ -23180,6 +23149,35 @@ cc_prebuilt_library_shared {
                 "libc++_shared",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudioEngineerTest",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/odm/lib/libaudioEngineerTest.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libtinyalsa",
+                "libaudioroute",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },

@@ -371,7 +371,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.keymaster@3.0-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.sdm710 \
     camera.qcom \
     com.dsi.ant@1.0-impl \
     com.qti.chi.override \
@@ -608,6 +607,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
+    audio.primary.qcom \
     vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl \
     libFileMux_proprietary \
     libOccluDetect \
@@ -684,6 +684,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
+    audio.primary.sdm710 \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
@@ -923,7 +924,6 @@ PRODUCT_PACKAGES += \
     anc.hal \
     fingerprint.goodix_G2.default \
     fingerprint.goodix_G3.default \
-    libaudioEngineerTest \
     libbsproxy \
     libgf_hal_G2 \
     libgf_hal_G3 \
@@ -931,6 +931,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.biometrics.fingerprint@2.1 \
     vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
     libSNPE_G \
+    libaudioEngineerTest \
     libavutil \
     liboemcrypto \
     libormshalclient \
