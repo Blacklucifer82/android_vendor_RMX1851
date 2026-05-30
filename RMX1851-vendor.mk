@@ -267,17 +267,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1851/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/realme/RMX1851/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/realme/RMX1851/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_gc5035.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.sensormodule.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.ofilm_imx519.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.sensormodule.truly_s5k2x5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.truly_s5k2x5.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_gc5035.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.tuned.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.ofilm_imx519.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/com.qti.tuned.truly_s5k2x5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.truly_s5k2x5.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/data.zip:$(TARGET_COPY_OUT_VENDOR)/lib/camera/data.zip \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/realme/RMX1851/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/realme/RMX1851/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_gc5035.bin \
     vendor/realme/RMX1851/proprietary/vendor/lib64/camera/com.qti.sensormodule.ofilm_imx519.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.ofilm_imx519.bin \
     vendor/realme/RMX1851/proprietary/vendor/lib64/camera/com.qti.sensormodule.truly_s5k2x5.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.truly_s5k2x5.bin \
@@ -300,7 +289,139 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    android.hardware.health@2.0-impl-2.1-qti \
+    vulkan.adreno \
+    libC2D2 \
+    libCB \
+    libOpenCL \
+    libVkLayer_q3dtools \
+    libadreno_utils \
+    libadsp_default_listener \
+    libadsprpc \
+    libarm_proxy_skel \
+    libc2d30_bltlib \
+    libcdsp_default_listener \
+    libcdsprpc \
+    libdiag \
+    libdsutils \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libfastrpc_utf_stub \
+    libgpudataproducer \
+    libgsl \
+    libhvx_proxy_stub \
+    libidl \
+    libllvm-glnext \
+    libllvm-qcom \
+    libmdmdetect \
+    libmdsprpc \
+    libmmosal_vendor \
+    libmpbase \
+    libqcmaputils \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmiservices \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectSegmentation_stub \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
+    libsdsprpc \
+    libsensorslog \
+    libsns_device_mode_stub \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsnsapi \
+    libsnsdiaglog \
+    libssc \
+    libssc_default_listener \
+    libsysmon_cdsp_skel \
+    libthermalclient \
+    libtime_genoff \
+    libvppclient \
+    libvpphvx \
+    libvpplibrary \
+    sensors.ssc \
+    vendor.qti.data.mwqem@1.0 \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fingerprint@1.0 \
+    vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
     btaudio_offload_if \
+    audio.bluetooth_qti.default \
+    audio.primary.qcom \
+    sound_trigger.primary.sdm710 \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    libFileMux_proprietary \
+    libOmxVideoDSMode \
+    libOmxVpp \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libadm \
+    libadpcmdec \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioalsa \
+    libbluetooth_audio_session_qti \
+    libcapiv2svacnn \
+    libcapiv2vop \
+    libdrc \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    liblistensoundmodel2 \
+    libmm-hdcpmgr \
+    libmmrtpdecoder_proprietary \
+    libmmrtpencoder_proprietary \
+    libmulawdec \
+    libqtigef \
+    libsmwrapper \
+    libssrec \
+    libsurround_3mic_proc \
+    libtinycompress \
+    libwfdcodecv4l2_proprietary \
+    libwfdcommonutils_proprietary \
+    libwfdconfigutils_proprietary \
+    libwfddisplayconfig_proprietary \
+    libwfdhdcpcp \
+    libwfdhdcpservice_proprietary \
+    libwfdmminterface_proprietary \
+    libwfdmmservice_proprietary \
+    libwfdmmsrc_proprietary \
+    libwfdmodulehdcpsession \
+    libwfdrtsp_proprietary \
+    libwfdsessionmodule \
+    libwfdsourcesession_proprietary \
+    libwfdsourcesm_proprietary \
+    libwfduibcinterface_proprietary \
+    libwfduibcsink_proprietary \
+    libwfduibcsinkinterface_proprietary \
+    libwfduibcsrc_proprietary \
+    libwfduibcsrcinterface_proprietary \
+    libwfdutils_proprietary \
+    libasphere \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
+    libshoebox \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.qti.sensor.gc2375h \
     com.qti.sensor.gc5035 \
     com.qti.sensor.hi846 \
@@ -361,319 +482,6 @@ PRODUCT_PACKAGES += \
     com.slam.node.process \
     com.vidhance.node.eis \
     com.vidhance.stats.aec_dmbr \
-    com.dsi.ant@1.0 \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
-    android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.health@2.0-impl-2.1-qti \
-    android.hardware.keymaster@3.0-impl-qti \
-    audio.bluetooth_qti.default \
-    camera.qcom \
-    com.dsi.ant@1.0-impl \
-    com.qti.chi.override \
-    sound_trigger.primary.sdm710 \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
-    vendor.qti.hardware.bluetooth_sar@1.1-impl \
-    vendor.qti.hardware.btconfigstore@1.0-impl \
-    vendor.qti.hardware.btconfigstore@2.0-impl \
-    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
-    vendor.qti.hardware.qteeconnector@1.0-impl \
-    vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    vulkan.adreno \
-    libAlacSwDec \
-    libApeSwDec \
-    libC2D2 \
-    libCB \
-    libFlacSwDec \
-    libGPQTEEC_vendor \
-    libGPTEE_vendor \
-    libGPreqcancel \
-    libGPreqcancel_svc \
-    libMpeg4SwEncoder \
-    libOPPORectify \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
-    libOmxVpp \
-    libOmxWmaDec \
-    libOpenCL \
-    libOppoAPSMemMgr \
-    libOppoAlgoClient \
-    libPolarrRender \
-    libQSEEComAPI \
-    libQTEEConnector_vendor \
-    libSNPE \
-    libSecureUILib \
-    libSonyIMX471RmscLibrary \
-    libStDrvInt \
-    libVkLayer_q3dtools \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libadreno_utils \
-    libadsp_default_listener \
-    libadsprpc \
-    libarcsoft_distortion_correction \
-    libarcsoft_distortion_correction_710 \
-    libarcsoft_hdr_denoise_api \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_low_light_hdr \
-    libarcsoft_smart_denoise \
-    libarm_proxy_skel \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioalsa \
-    libbluetooth_audio_session_qti \
-    libbokehclient \
-    libc++_shared \
-    libc2d30_bltlib \
-    libcamera_core_hwi \
-    libcamera_nn_stub \
-    libcamhidlsensor \
-    libcamxfdalgov7 \
-    libcamxfdalgov8 \
-    libcamxfdengine \
-    libcamxstatscore \
-    libcamxswprocessalgo \
-    libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2vop \
-    libcdsp_default_listener \
-    libcdsprpc \
-    libcirrusspkrprot \
-    libcom.qti.chinodeutils \
-    libconfigdb \
-    libcvface_api \
-    libdiag \
-    libdisp-aba \
-    libdisplayqos \
-    libdrmfs \
-    libdrmtime \
-    libdsi_netctrl \
-    libdsutils \
-    libfastcvdsp_stub \
-    libfastcvopt \
-    libfastrpc_utf_stub \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libgpudataproducer \
-    libgsl \
-    libhdr_tm \
-    libhvx_proxy_stub \
-    libidl \
-    libkeymasterdeviceutils \
-    libkeymasterprovision \
-    libkeymasterutils \
-    liblistensoundmodel2 \
-    libllvm-glnext \
-    libllvm-qcom \
-    liblqe \
-    libmdmdetect \
-    libmdsprpc \
-    libmmcamera_faceproc \
-    libmmcamera_faceproc2 \
-    libmmosal_vendor \
-    libmpbase \
-    libmulawdec \
-    libnetmgr \
-    libnetmgr_common \
-    libnetmgr_nr_fusion \
-    libnetmgr_rmnet_ext \
-    libocam_common \
-    libocam_snapshot_intf \
-    liboppo_aisd \
-    liboppo_log_print \
-    liboppo_platform_hwi \
-    liboppoalgolib \
-    libopposfr \
-    libops \
-    libpdmapper \
-    libpdnotifier \
-    libperipheral_client \
-    libqcci_legacy \
-    libqcmaputils \
-    libqcrilFramework \
-    libqcrildatactl \
-    libqdi \
-    libqdp \
-    libqisl \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmiservices \
-    libqrtr \
-    libqseed3 \
-    libqsocket \
-    libqtigef \
-    libqtikeymaster4 \
-    libril-qc-logger \
-    libril-qc-ltedirectdisc \
-    libril-qc-radioconfig \
-    libril-qcril-hook-oem \
-    librilqmiservices \
-    librpmb \
-    libscveCommon \
-    libscveCommon_stub \
-    libscveObjectSegmentation \
-    libscveObjectSegmentation_stub \
-    libscveObjectTracker \
-    libscveObjectTracker_stub \
-    libsdedrm \
-    libsdm-color \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
-    libsdsprpc \
-    libsecureui \
-    libsecureui_svcsock \
-    libsensorcal \
-    libsensorslog \
-    libsettings \
-    libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsnsapi \
-    libsnsdiaglog \
-    libspcom \
-    libspl \
-    libssc \
-    libssc_default_listener \
-    libssd \
-    libssrec \
-    libstface_fd_api \
-    libswregistrationalgo \
-    libswvdec \
-    libsymphony-cpu \
-    libsymphonypower \
-    libsysmon_cdsp_skel \
-    libsystem_health_mon \
-    libthermalclient \
-    libtime_genoff \
-    libtinycompress \
-    libtinyxml2_1 \
-    libtriplecam_image_optical_zoom \
-    libtriplecam_optical_zoom_control \
-    libtriplecam_video_optical_zoom \
-    libtzdrmgenprov \
-    libvidhance \
-    libvppclient \
-    libvpphvx \
-    libvpplibrary \
-    qcom.camera.log \
-    qcrild_librilutils \
-    qtimutex \
-    sensors.ssc \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
-    vendor.oplus.hardware.commondcs@1.0 \
-    vendor.qti.data.mwqem@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.0 \
-    vendor.qti.hardware.bluetooth_sar@1.1 \
-    vendor.qti.hardware.dsp@1.0 \
-    vendor.qti.hardware.fingerprint@1.0 \
-    vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.sensorscalibrate@1.0 \
-    vendor.qti.hardware.tui_comm@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    audio.primary.qcom \
-    vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-impl \
-    libFileMux_proprietary \
-    libOccluDetect \
-    libOmxDsdDec \
-    libOmxVideoDSMode \
-    libSCES \
-    libSTDualCamCaptureBokeh \
-    libSTDualCamPreviewBokeh \
-    libSTdisp \
-    libSonyIMX519MbrLibrary \
-    libVDImageAdjustment \
-    libVDRTImageAdjustment \
-    libadm \
-    libadpcmdec \
-    libarcsoft_dualcam_portrait_shot \
-    libarcsoft_hdr_couple_api \
-    libarcsoft_high_dynamic_range_couple \
-    libarcsoft_picauto \
-    libblur_channel \
-    libcppf \
-    libdepthmap \
-    libdrc \
-    libdsd2pcm \
-    libfastcrc \
-    libiu456_datapath_filt_lib \
-    libiu456_datapath_processor \
-    libmm-hdcpmgr \
-    libmmrtpdecoder_proprietary \
-    libmmrtpencoder_proprietary \
-    libnnp \
-    libobcdepth_hal \
-    liboppocamalgo_daemon \
-    libsdk_3d \
-    libsdk_common \
-    libsmwrapper \
-    libsns_registry_skel \
-    libst_personblur \
-    libst_scb_dep1 \
-    libst_segmentation \
-    libstblur_capture_api \
-    libstface_seg_ocl \
-    libsurround_3mic_proc \
-    libthread_blur \
-    libvideoutils \
-    libwfdcodecv4l2_proprietary \
-    libwfdcommonutils_proprietary \
-    libwfdconfigutils_proprietary \
-    libwfddisplayconfig_proprietary \
-    libwfdhdcpcp \
-    libwfdhdcpservice_proprietary \
-    libwfdmminterface_proprietary \
-    libwfdmmservice_proprietary \
-    libwfdmmsrc_proprietary \
-    libwfdmodulehdcpsession \
-    libwfdrtsp_proprietary \
-    libwfdsessionmodule \
-    libwfdsourcesession_proprietary \
-    libwfdsourcesm_proprietary \
-    libwfduibcinterface_proprietary \
-    libwfduibcsink_proprietary \
-    libwfduibcsinkinterface_proprietary \
-    libwfduibcsrc_proprietary \
-    libwfduibcsrcinterface_proprietary \
-    libwfdutils_proprietary \
-    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
-    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -683,12 +491,20 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
     android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
-    audio.primary.sdm710 \
+    android.hardware.keymaster@3.0-impl-qti \
+    camera.qcom \
+    com.dsi.ant@1.0-impl \
+    com.qti.chi.override \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
-    vendor.qti.hardware.fm@1.0-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.qti.hardware.qteeconnector@1.0-impl \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
     lib-imscmservice \
     lib-imsdpl \
@@ -704,7 +520,20 @@ PRODUCT_PACKAGES += \
     lib-siputility \
     lib-uceservice \
     lib3DSlender \
+    libGPQTEEC_vendor \
+    libGPTEE_vendor \
+    libGPreqcancel \
+    libGPreqcancel_svc \
+    libOPPORectify \
+    libOppoAPSMemMgr \
     libPerfectlyClearCrux \
+    libPolarrRender \
+    libQSEEComAPI \
+    libQTEEConnector_vendor \
+    libSNPE \
+    libSecureUILib \
+    libSonyIMX471RmscLibrary \
+    libStDrvInt \
     libVDBlurlessAPI_v2 \
     libVDDualCameraBlurlessAPI \
     libVDEyeEnhance \
@@ -712,40 +541,68 @@ PRODUCT_PACKAGES += \
     libVDSuperPhotoAPI \
     libaoa \
     libarcsoft_beautyshot \
+    libarcsoft_distortion_correction \
+    libarcsoft_distortion_correction_710 \
     libarcsoft_dualcam_bokeh_api \
     libarcsoft_dualcam_refocus_left \
     libarcsoft_dualcam_refocus_preview \
     libarcsoft_dualcam_refocus_right \
+    libarcsoft_hdr_denoise_api \
     libarcsoft_hdrplus_hvx_stub \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_low_light_hdr \
     libarcsoft_portraitSN_hvx_stub \
     libarcsoft_portrait_super_night_raw \
     libarcsoft_relighting_pro_image \
+    libarcsoft_smart_denoise \
     libarcsoft_super_night_raw \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
     libbatching \
+    libbokehclient \
     libbtnv \
+    libc++_shared \
     libcacertclient \
+    libcamera_core_hwi \
+    libcamera_nn_stub \
+    libcamhidlsensor \
+    libcamxfdalgov7 \
+    libcamxfdalgov8 \
+    libcamxfdengine \
+    libcamxstatscore \
+    libcamxswprocessalgo \
+    libcamxtintlessalgo \
     libcdfw \
     libcdfw_remote_api \
     libcne \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcom.qti.chinodeutils \
+    libconfigdb \
     libcpion \
+    libcvface_api \
     libd++ \
     libdataitems \
+    libdisp-aba \
+    libdisplayqos \
     libdpmqmihal \
+    libdrmfs \
+    libdrmtime \
+    libdsi_netctrl \
     libgdtap \
     libgeofencing \
     libgnss \
     libgnsspps \
     libgps.utils \
+    libhdr_tm \
     libhexagon_nn_stub \
     libizat_client_api \
     libizat_core \
-    libjnihelper \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
     liblbs_core \
     libloadalgo_stub \
     libloc_api_v02 \
@@ -756,29 +613,96 @@ PRODUCT_PACKAGES += \
     liblocationservice_glue \
     liblowi_client \
     liblowi_wifihal \
+    liblqe \
     libminkdescriptor \
     libminksocket \
     libml_util \
+    libmmcamera_faceproc \
+    libmmcamera_faceproc2 \
     libnativehelpers \
+    libnetmgr \
+    libnetmgr_common \
+    libnetmgr_nr_fusion \
+    libnetmgr_rmnet_ext \
     libnlnetmgr \
+    libocam_common \
+    libocam_snapshot_intf \
+    liboppo_aisd \
+    liboppo_log_print \
+    liboppo_platform_hwi \
+    liboppoalgolib \
+    libopposfr \
+    libops \
+    libpdmapper \
+    libpdnotifier \
+    libperipheral_client \
     libpvr \
     libqcbor \
     libqcc_file_agent \
+    libqcrilFramework \
+    libqcrildatactl \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
     libqfp-service \
+    libqisl \
+    libqrtr \
+    libqseed3 \
+    libqsocket \
+    libqtikeymaster4 \
     librcc \
     libril-qc-hal-qmi \
+    libril-qc-logger \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    libril-qcril-hook-oem \
+    librilqmiservices \
+    librpmb \
+    libsdedrm \
+    libsdm-color \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
+    libsecureui \
+    libsecureui_svcsock \
+    libsensorcal \
+    libsettings \
     libsnpe_dsp_domains_v2 \
     libsnpeml \
+    libspcom \
+    libspl \
+    libssd \
+    libstface_fd_api \
+    libswregistrationalgo \
+    libsymphony-cpu \
+    libsymphonypower \
+    libsystem_health_mon \
+    libtinyxml2_1 \
+    libtriplecam_image_optical_zoom \
+    libtriplecam_optical_zoom_control \
+    libtriplecam_video_optical_zoom \
     libtrustedapploader \
+    libtzdrmgenprov \
+    libvidhance \
     libwms \
     libwqe \
     libxml \
     libxtadapter \
+    qcom.camera.log \
+    qcrild_librilutils \
     qtibus \
+    qtimutex \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
+    vendor.display.color@1.0 \
+    vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
+    vendor.display.color@1.3 \
+    vendor.display.color@1.4 \
+    vendor.display.color@1.5 \
+    vendor.display.postproc@1.0 \
+    vendor.oplus.hardware.commondcs@1.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -792,6 +716,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
@@ -805,6 +731,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
@@ -832,8 +759,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
     vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
+    vendor.qti.hardware.tui_comm@1.0 \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
@@ -877,7 +806,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
     vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
     vendor_lib_rfsa_adsp_libthread_blur_skel_so \
-    com.qualcomm.qti.ant@1.0 \
     libmmosal \
     libmmparser_lite \
     libmmrtpdecoder \
@@ -900,6 +828,7 @@ PRODUCT_PACKAGES += \
     libwfdmmsrc_system \
     libwfdservice \
     vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    com.qualcomm.qti.ant@1.0 \
     com.qualcomm.qti.dpm.api@1.0 \
     fm_helium \
     lib-imsvideocodec \
@@ -926,7 +855,6 @@ PRODUCT_PACKAGES += \
     oplus.sensors.ssc \
     vendor.oplus.hardware.biometrics.fingerprint@2.1_odm \
     vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
-    libSNPE_G \
     libaudioEngineerTest \
     anc.hal \
     fingerprint.goodix_G2.default \
