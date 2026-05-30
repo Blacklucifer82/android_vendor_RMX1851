@@ -688,6 +688,8 @@ PRODUCT_PACKAGES += \
     libwqe \
     libxml \
     libxtadapter \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     qcom.camera.log \
     qcrild_librilutils \
     qtibus \
