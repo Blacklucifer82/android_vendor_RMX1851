@@ -295,7 +295,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.health@2.0-impl-2.1-qti \
     vulkan.adreno \
     libC2D2 \
     libCB \
@@ -600,6 +599,7 @@ PRODUCT_PACKAGES += \
     libhexagon_nn_stub \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
