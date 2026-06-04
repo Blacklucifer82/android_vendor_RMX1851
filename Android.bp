@@ -9403,6 +9403,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcdfw_remote_api",
+    allow_undefined_symbols: true,
     owner: "realme",
     strip: {
         none: true,
@@ -16578,6 +16579,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdmmsrc_system",
+    allow_undefined_symbols: true,
     owner: "realme",
     strip: {
         none: true,
@@ -16620,6 +16622,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdservice",
+    allow_undefined_symbols: true,
     owner: "realme",
     strip: {
         none: true,
@@ -17157,6 +17160,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwfdnative",
+    allow_undefined_symbols: true,
     owner: "realme",
     strip: {
         none: true,
@@ -20316,6 +20320,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "xtwifi-client",
+    check_elf_files: false,
     owner: "realme",
     target: {
         android_arm64: {
@@ -20340,8 +20345,6 @@ cc_prebuilt_binary {
                 "libasn1cper",
                 "libasn1crt",
                 "libasn1crtx",
-                "libxtwifi_server_protocol",
-                "libxtwifi_server_protocol_uri_v3",
                 "liblowi_client",
                 "libc++",
                 "libc",
